@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de alunos</title>
+</head>
+<body>
+    <form action="inserir.php" method="post">
+        Digite sua matrícula:
+        <input type="text" name="matricula" id="matricula"> 
+        <br> <br>
+        Digite seu nome:
+        <input type="text" name="nome">
+        <br> <br>
+        Digite sua idade:
+        <input size="9" type="text" name="idade">
+        <input type="submit" value="GRAVAR">
+    </form>
+    
+    <button onclick="Excluir();">
+        EXCLUIR
+    </button>
+</body>
+<script>
+    function Excluir()
+    {
+        M = matricula.value
+        window.open("excluir.php?M="+M, "_self")
+    }
+</script>
+</html>
